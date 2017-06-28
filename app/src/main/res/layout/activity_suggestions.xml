@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.whatscover.android.MainActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appBarLayout">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:background="@color/colorPrimary"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <!--<ScrollView
+        android:layout_below="@+id/reLayTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/top_bar">-->
+
+        <LinearLayout
+            android:layout_below="@+id/appBarLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/top_bar">
+
+            <RelativeLayout
+                android:id="@+id/liLayLogoBack"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/back_a_suggestions4">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:paddingLeft="@dimen/margin_15"
+                    android:paddingRight="@dimen/margin_15">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="@dimen/margin_1"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="@dimen/image_margin"
+                            android:src="@drawable/ic_heart_white3"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="@dimen/margin_1"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="@dimen/image_margin"
+                            android:src="@drawable/ic_payment_white4"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="@dimen/margin_1"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="@dimen/image_margin"
+                            android:src="@drawable/ic_info_white4"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="@dimen/margin_1"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="@dimen/image_margin"
+                            android:src="@drawable/ic_health_care_white3"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="@dimen/margin_1"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="@dimen/image_margin"
+                            android:src="@drawable/ic_hospital_white4"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/lvSuggestions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+        </LinearLayout>
+    <!--</ScrollView>-->
+
+    <LinearLayout
+        android:id="@+id/liLayFooter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bottomBarColor"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/footer_placeholder"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size20"/>
+    </LinearLayout>
+</RelativeLayout>

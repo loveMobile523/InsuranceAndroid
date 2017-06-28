@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+    <requestFocus />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:paddingLeft="@dimen/margin_30"
+                android:paddingRight="@dimen/margin_30">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_45"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:hint="City or poscode"
+                    android:textColorHint="@color/colorBreak"
+                    android:background="@drawable/shape_edit_text"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_45"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:hint="Monthly Income"
+                    android:textColorHint="@color/colorBreak"
+                    android:background="@drawable/shape_edit_text"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_45"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:hint="Name"
+                    android:textColorHint="@color/colorBreak"
+                    android:background="@drawable/shape_edit_text"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_45"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:hint="Cover Limit"
+                    android:textColorHint="@color/colorBreak"
+                    android:background="@drawable/shape_edit_text"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_45"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:hint="Premium Affordability"
+                    android:textColorHint="@color/colorBreak"
+                    android:background="@drawable/shape_edit_text"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

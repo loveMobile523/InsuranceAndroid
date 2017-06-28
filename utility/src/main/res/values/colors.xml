@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffffff</color>
+    <color name="toast_background">#2e2e2e</color>
+    <color name="colorError">#ff6460</color>
+    <color name="colorInfo">#1E90FF</color>
+    <color name="colorSuccess">#78c847</color>
+    <color name="statusOffline">#ff6460</color>
+    <color name="statusOnline">#78c847</color>
+    <color name="colorWarning">#ffd859</color>
+
+</resources>

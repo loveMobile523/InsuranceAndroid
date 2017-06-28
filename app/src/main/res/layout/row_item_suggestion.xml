@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1"
+        android:background="@color/colorBreak">
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_filter_height">
+
+        <TextView
+            android:id="@+id/tvSuggestionTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="105dp"
+            android:paddingLeft="@dimen/margin_10"
+            android:gravity="center_vertical"
+            android:text="Accidental Disabilities"
+            android:textSize="@dimen/text_size16"
+            android:textColor="@color/colorGray4"/>
+
+        <ImageButton
+            android:id="@+id/btnICompare"
+            android:layout_width="@dimen/btn_filter_height"
+            android:layout_height="match_parent"
+            android:layout_marginRight="55dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_compare_off2"/>
+
+        <ImageButton
+            android:id="@+id/btnIFilter"
+            android:layout_width="@dimen/btn_filter_height"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_filter_off2"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_150"
+        android:layout_marginBottom="@dimen/margin_35"/>
+</LinearLayout>

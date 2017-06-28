@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8DBDD3</color>
+    <color name="colorPrimaryDark">#7B919C</color>
+    <color name="colorAccent">#BBE22D</color>
+
+
+
+    <color name="topBarColor">#8DBDD3</color>
+    <color name="bottomBarColor">#7B919C</color>
+    <color name="actionColor">#BBE22D</color>
+
+    <color name="colorGreen1">#9AB735</color>
+    <color name="colorGreen2">#BCE03E</color>
+    <color name="colorGreen3">#EEFF62</color>
+
+    <color name="buttonBackBrownColor">#FCB052</color>
+    <color name="buttonBackBrownStrokeColor">#FFDAA6</color>
+
+    <color name="colorLoginHint">#c5c5c5</color>
+    <color name="color111">#11dddddd</color>
+    <color name="colorGray1">#111111</color>
+    <color name="colorGray2">#222222</color>
+    <color name="colorGray3">#333333</color>
+    <color name="colorGray4">#444444</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBreak">#CCCCCC</color>
+    <color name="colorSelected">#777777</color>
+    <color name="colorTransparentBlack">#88000000</color>
+
+
+    <color name="colorWhiteTransparent">#D9FFFFFF</color>
+    <color name="colorTexLabel">#FFCC00</color>
+    <color name="colorTextLabelLogin">#2fa881</color>
+
+</resources>

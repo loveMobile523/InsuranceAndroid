@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.whatscover.android.activity.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/reLayTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar"
+        android:background="@color/topBarColor">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_applied_applications"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size20"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:id="@+id/liLayBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:onClick="onClickBack">
+
+            <ImageButton
+                android:layout_width="@dimen/margin_22"
+                android:layout_height="@dimen/margin_22"
+                android:layout_marginLeft="@dimen/margin_3"
+                android:background="@drawable/ic_back_arrow"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_3"
+                android:text="@string/back"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size18"/>
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="@dimen/btn_menu_width"
+            android:layout_height="@dimen/btn_menu_width"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_10"
+            android:background="@drawable/ic_main_menu"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/reLayTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/top_bar"
+        android:paddingRight="@dimen/margin_7"
+        android:paddingLeft="@dimen/margin_7">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerApplication"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liLayFooter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bottomBarColor"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/footer_placeholder"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size20"/>
+    </LinearLayout>
+</RelativeLayout>

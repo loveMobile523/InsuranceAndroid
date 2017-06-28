@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/appBarLayout">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                android:background="@color/colorPrimary"/>
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:id="@+id/liLaySlide"
+            android:layout_below="@+id/appBarLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_35"
+            android:layout_marginTop="@dimen/margin_40">
+
+            <RelativeLayout
+                android:id="@+id/reLayGeneralInfo"
+                android:layout_width="@dimen/margin_1"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClickGeneralInfo">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1"
+                    android:layout_centerInParent="true"
+                    android:background="@color/colorBreak">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/imgSlideSelectGeneral"
+                    android:layout_width="@dimen/margin_30"
+                    android:layout_height="@dimen/margin_30"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_select_on"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/reLayMembersSelection"
+                android:layout_width="@dimen/margin_1"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClickMembersSelection">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1"
+                    android:layout_centerInParent="true"
+                    android:background="@color/colorBreak">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/imgSlideSelectMembers"
+                    android:layout_width="@dimen/margin_30"
+                    android:layout_height="@dimen/margin_30"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_select_off"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liLaySlideLabel"
+            android:layout_below="@+id/liLaySlide"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_45">
+
+            <LinearLayout
+                android:layout_width="@dimen/margin_1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tvGeneralInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="General\nInfo"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorSelected"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/margin_1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tvMembersSelection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Members\nSelection"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBreak"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liLayPager"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/liLayNext"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="170dp">
+
+            <android.support.v4.view.ViewPager
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="0dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liLayNext"
+            android:layout_above="@+id/liLayFooter"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/btn_margin_bottom"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="120dp"
+                android:layout_height="@dimen/btn_height"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/next"
+                android:textColor="@color/colorWhite"
+                android:onClick="onClickNext"
+                android:background="@drawable/btn_clicked_brown"/>
+
+            <ImageView
+                android:layout_width="51dp"
+                android:layout_height="@dimen/btn_height"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:background="@drawable/ic_camera_off2"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liLaySubmit"
+            android:layout_above="@+id/liLayFooter"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/btn_margin_bottom"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="@dimen/btn_height"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/submit"
+                android:textColor="@color/colorWhite"
+                android:onClick="onClickSubmit"
+                android:background="@drawable/btn_clicked_brown"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liLayFooter"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_bar"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bottomBarColor"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/footer_placeholder"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size20"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

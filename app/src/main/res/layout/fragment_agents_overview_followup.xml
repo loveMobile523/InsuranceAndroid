@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="@dimen/margin_10"
+    android:paddingLeft="@dimen/margin_10">
+
+    <!-- <ListView
+         android:id="@+id/lvAgentsONew"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+     </ListView>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerAgentOFollowUp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

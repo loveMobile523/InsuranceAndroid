@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.whatscover.android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application android:allowBackup="true" android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/AppTheme">
+        <activity android:name=".activity.SplashActivity" android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.LoginActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:host="http://192.168.0.11:8080/api/authenticate"
+                    android:scheme="http://192.168.0.11:8080/" />
+            </intent-filter>
+        </activity>
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity android:name=".activity.RegisterActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.MainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.AddNewPolicyActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.PolicyDetailsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.PolicyMakeDetailsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.AppliedAppActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.AgentsOverviewActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.CreateAgentsOActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.CompareActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.SuggestionsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.HealthInsuranceActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.LoginActivity2"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.RegisterActivity2" android:screenOrientation="portrait"
+            android:theme="@style/Translucent" />
+    </application>
+
+</manifest>

@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">WhatsCover</string>
+
+    <!-- facebook -->
+    <string name="facebook_app_id">1899763796933017</string>
+
+    <!-- layout string -->
+    <string name="add_new_policy">Add New Policy</string>
+    <string name="back">Back</string>
+
+    <string name="prompt">Available Time</string>
+    <string name="date1">date1</string>
+    <string name="date2">date2</string>
+    <string name="date3">date3</string>
+
+    <string-array name="payment_arrays">
+        <item>@string/prompt</item>
+        <item>@string/date1</item>
+        <item>@string/date2</item>
+        <item>@string/date3</item>
+    </string-array>
+
+    <string name="login_title">Login</string>
+    <string name="register_title">Register</string>
+    <string name="to_register_title">You don\'t have account?</string>
+    <string name="forgot_title">Forgot username or password?</string>
+    <string name="first_name_title">First Name</string>
+    <string name="last_name_title">Last Name</string>
+    <string name="email_title">Email or username</string>
+    <string name="password_title">Password</string>
+    <string name="confirm_password_title">Confirm Password</string>
+
+
+    <string name="blank_first_name">Please enter First name.</string>
+    <string name="blank_last_name">Please enter Last name.</string>
+    <string name="blank_email">Please enter Email or user name.</string>
+    <string name="blank_password">Please enter password.</string>
+    <string name="blank_confirm_password">Please enter confirm password.</string>
+    <string name="check_password">Confirm password doesn\'t match with password.</string>
+
+
+    //Success Messages
+    <string name="success_message_register">You are successfully registered, please check your email to activate your account</string>
+    <string name="success_message_login">You are successfully login</string>
+
+
+
+    //error messages
+    <string name="error_internal">There was an internal error in the server, please try later</string>
+    <string name="error_bad_request">Your request was incorrect, please make sure you are giving correct data</string>
+    <string name="error_unauthorized">You are not allowed to do this, please contact to admin</string>
+    <string name="error_unknown">There was an unknown error, please try again.</string>
+
+    //facebook messages
+    <string name="fb_login_success">Success, FaceBook Login</string>
+    <string name="fb_login_canceled">Login attempt canceled.</string>
+    <string name="fb_login_failed">Login attempt failed.</string>
+
+    // activity title
+    <string name="title_health_insurances">Health Insurances</string>
+    <string name="title_suggestion">Suggestions</string>
+    <string name="title_add_new_policy">Add New Policy</string>
+    <string name="title_insurance_detail">Insurance Detail</string>
+
+    <string name="title_agents_overview">Agents Overview</string>
+    <string name="title_applied_applications">Applied Applications</string>
+    <string name="title_compare">Compare</string>
+    <string name="title_insurance_details">Insurance Details</string>
+
+    // widget name
+    <string name="overview">OVERVIEW</string>
+
+    <string name="price">PRICE</string>
+    <string name="coverage">COVERAGE</string>
+    <string name="age">AGE</string>
+
+    <string name="new_lower">New</string>
+    <string name="new_upper">NEW</string>
+    <string name="upcoming_lower">Upcoming</string>
+    <string name="upcoming_upper">UPCOMING</string>
+    <string name="follow_up">FOLLOW UP</string>
+    <string name="follow_up_lower">Follow Up</string>
+    <string name="footer_placeholder">Footer Placeholder</string>
+    <string name="confirm">Confirm</string>
+    <string name="submit">SUBMIT</string>
+    <string name="next1">NEXT</string>
+    <string name="done">DONE</string>
+    <string name="message">MESSAGE</string>
+    <string name="view_details">VIEW DETAILS</string>
+    <string name="policy_name">POLICY NAME</string>
+    <string name="current_policies">Current Policies</string>
+    <string name="add_policy">Add Policy</string>
+    <string name="total_cover">Total Cover</string>
+    <string name="another_factor">Another Factor</string>
+    <string name="rank">Rank</string>
+    <string name="insured">Insured</string>
+    <string name="valid_until">Valid Until</string>
+    <string name="insurance_type">Insurance Type</string>
+    <string name="or">or</string>
+
+    <string name="thanks_for_your_interest">Thanks for your interest!</string>
+    <string name="please_let_us_know_best_time_and_place_to_meet">Please let us know best time and place to meet:</string>
+
+    <string name="login_success">login success</string>
+    <string name="login">LOGIN</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="forgot_your_password">Forgot your password ?</string>
+    <string name="go">GO</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="next">NEXT</string>
+    <string name="register">REGISTER</string>
+    <string name="two_exit">Press again to exit</string>
+
+    <string name="error_invalid_name">Name is invalid</string>
+    <string name="error_invalid_number">Number is invalid</string>
+    <string name="error_invalid_date">Date is invalid (dd/MM/yyyy)</string>
+    <string name="error_invalid_password">This password is invalid</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_message_empty">Please fill this field</string>
+    <string name="error_suggestion_empty">Empty suggestion</string>
+</resources>

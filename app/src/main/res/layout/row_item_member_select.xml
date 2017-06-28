@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/margin_50"
+    android:paddingLeft="@dimen/margin_30"
+    android:paddingRight="@dimen/margin_30"
+    android:paddingTop="@dimen/margin_5"
+    android:paddingBottom="@dimen/margin_5"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/imgDummy"
+        android:layout_width="@dimen/margin_40"
+        android:layout_height="@dimen/margin_40"
+        android:background="@drawable/dummy1_back5"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:text="Name 01"
+            android:textColor="@color/colorGray2"/>
+
+        <ImageView
+            android:id="@+id/imgSelect"
+            android:layout_width="@dimen/margin_30"
+            android:layout_height="@dimen/margin_30"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_5"
+            android:onClick="onClickSelected"
+            android:background="@drawable/checkbox_normal"/>
+    </RelativeLayout>
+</LinearLayout>

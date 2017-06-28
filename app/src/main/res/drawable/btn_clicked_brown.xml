@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- NOTE: order is important (the first matching state(s) is what is rendered) -->
+
+    <item android:drawable="@drawable/shape_brown_clicked"
+        android:state_pressed="true" />
+    <item android:drawable="@drawable/shape_brown"
+        android:state_pressed="false"/>
+    <item android:drawable="@drawable/shape_brown_clicked"
+        android:state_focused="true" />
+
+</selector>

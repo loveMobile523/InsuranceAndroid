@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="160dp"
+    android:layout_height="@dimen/margin_150"
+    android:paddingLeft="@dimen/margin_5"
+    android:paddingRight="@dimen/margin_5">
+
+    <LinearLayout
+        android:id="@+id/liLayCategoryBack"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mask_compare_off2">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1"
+            android:gravity="center"
+            android:layout_weight="2.7">
+
+            <ImageView
+                android:id="@+id/imgCategoryBack"
+                android:layout_width="100dp"
+                android:layout_height="@dimen/margin_50"
+                android:src="@drawable/ic_hospital_center4"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1"
+            android:gravity="center_horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Blue Cross Insurance"
+                android:textColor="@color/colorGray3"/>
+
+            <TextView
+                android:id="@+id/tvValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$2000"
+                android:textColor="@color/colorGray1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
