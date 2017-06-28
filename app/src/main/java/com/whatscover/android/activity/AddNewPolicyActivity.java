@@ -33,6 +33,7 @@ import butterknife.OnClick;
 
 public class AddNewPolicyActivity extends BaseActivity implements FragmentManager.OnBackStackChangedListener{
 
+    // 
     @BindView(R.id.btnNext) Button btnNext;
     @BindView(R.id.btnSubmit) Button btnSubmit;
     @BindView(R.id.pager) ViewPager mPager;
